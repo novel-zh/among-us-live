@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101923">
+  <title>Смена — Among Us Live</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23c9fa79'/%3E%3Cpath d='M42 16H25L16 35h16l-7 14 24-27H34z' fill='%2311151c'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/style.css?v=0.9">
+  <link rel="stylesheet" href="/static/game.css?v=0.9">
+  <link rel="stylesheet" href="/static/tasks-skeld.css?v=0.9">
+  <link rel="stylesheet" href="/static/events.css?v=0.9">
+  <link rel="stylesheet" href="/static/sabotage.css?v=0.9">
+  <script src="https://telegram.org/js/telegram-web-app.js" defer></script>
+  <script src="/static/tasks-skeld.js?v=0.9" defer></script>
+  <script src="/static/tasks.js?v=0.9" defer></script>
+  <script src="/static/route-rules.js?v=0.9" defer></script>
+  <script src="/static/sabotage.js?v=0.9" defer></script>
+  <script src="/static/app.js?v=0.9" defer></script>
+</head>
+<body>
+  <div id="sabotage-hud" aria-hidden="true" hidden></div>
+  <div id="sabotage-notice" role="status" aria-live="polite" hidden></div>
+  <section id="game-event" class="game-event" role="alertdialog" aria-modal="true" aria-label="Событие игры" hidden></section>
+  <div class="shell">
+    <div class="workspace">
+      <header class="topbar"><button class="brand" data-action="home" aria-label="Главная"><span class="brand-icon">ϟ</span>Смена</button><div id="identity" class="identity"></div></header>
+      <nav id="nav" aria-label="Основное меню"></nav><span id="page-label" hidden></span>
+      <main id="main"><div class="loading">Подключаемся к серверу…</div></main>
+      <footer><span id="connection">Подключение…</span><span>Версия 0.9</span></footer>
+    </div>
+  </div>
+  <dialog id="modal"><div id="modal-content"></div><button id="close-modal" class="modal-close" aria-label="Закрыть">×</button></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
